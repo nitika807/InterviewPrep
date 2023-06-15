@@ -5,12 +5,25 @@ public class Student {
     private int rollNo;
     private int age;
     private String subject;
+    private int salary;
 
-    public Student( int rollNo, String name, int age, String className) {
+    private String dept;
+
+    public Student( int rollNo, String name, int age, String className, int salary, String dept) {
         this.rollNo = rollNo;
         this.name = name;
         this.age = age;
         this.subject = className;
+        this.salary=salary;
+        this.dept = dept;
+    }
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
     }
 
     public String getName() {
@@ -30,6 +43,14 @@ public class Student {
     }
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
     public Integer getAge() {
@@ -53,6 +74,8 @@ public class Student {
                 ", rollNo=" + rollNo +
                 ", age=" + age +
                 ", subject='" + subject + '\'' +
+                ", salary=" + salary +
+                ", dept='" + dept + '\'' +
                 '}';
     }
 }
