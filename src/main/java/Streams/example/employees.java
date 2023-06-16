@@ -1,4 +1,4 @@
-package org.example;
+package Streams.example;
 
 public class employees {
     String fName;
