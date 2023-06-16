@@ -1,4 +1,4 @@
-package CoreJava;
+package Streams;
 
 import java.util.ArrayList;
 import java.util.Comparator;

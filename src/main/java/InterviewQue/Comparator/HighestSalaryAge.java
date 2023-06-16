@@ -3,7 +3,7 @@ package InterviewQue.Comparator;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class StudentApp {
+public class HighestSalaryAge {
     public static void main(String[] args) {
         List<Student> s1 = new ArrayList<>();
         s1.add(new Student(1, "Jameson",22,"Java Full Stack",7000, "HR"));
@@ -15,7 +15,7 @@ public class StudentApp {
 
 // this finds out the highest salary
         System.out.println("\n");
-        System.out.println(s1.stream().max(Comparator.comparingInt((Student::getSalary)).thenComparing(Student::getAge)));
+        System.out.println(s1.stream().max(Comparator.comparingInt((Student::getAge)).thenComparing(Student::getSalary)));
 
         // this finds out the minimum salary
         System.out.println(s1.stream().min(Comparator.comparingInt((Student::getSalary)).thenComparing(Student::getAge)));
