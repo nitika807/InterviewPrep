@@ -15,9 +15,10 @@ public class ValidPalindrome {
         for(int i=bPoint; i>=0;i--){
             temp +=otherWay.charAt(i);
         }
-        System.out.println(temp.equalsIgnoreCase(otherWay));
+        System.out.println(temp.equalsIgnoreCase(otherWay));// this uses the swapping and adding method
         System.out.println(match(s));//function call to check a string a palindrome
         //following is the stream method to find out palindrome.
+        //following is the stream method to find out the palindrome
         System.out.println(IntStream.range(0, otherWay.length()).allMatch(i -> otherWay.charAt(i) == otherWay.charAt(bPoint - i)));
     }
 
